@@ -1,0 +1,30 @@
+command:
+  no-permission: "&cYou do not have permission to use this command."
+  invalid-type: "&cInvalid type. Valid types: &6{types}"
+  toggle:
+    enabled: "&aChatGPT has connected. Say Hi!"
+    disabled: "&cChatGPT has disconnected."
+  error: "&cAn error occurred while processing your message."
+
+send-messages-to-console: true
+use-default-chat: false
+format:
+  - "&b%player%: &7%message%"
+  - "&bAI -> %player%: &a%message%"
+
+chatgpt:
+  # https://platform.openai.com/docs/models/
+  model: "gpt-3.5-turbo"
+  temperature: 0.9
+  max-tokens: 150
+  top-p: 1.0
+  frequency-penalty: 0.0
+  presence-penalty: 0.6
+
+# Change this to change the priority of the chat listener (useful if you have other plugins that modify chat)
+# Don't change this unless you know what you're doing
+# Listeners are called in following order: LOWEST -> LOW -> NORMAL -> HIGH -> HIGHEST -> MONITOR
+chat-priority: HIGH
+
+# https://beta.openai.com/account/api-keys
+API_KEY: ""
