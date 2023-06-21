@@ -1,0 +1,2 @@
+# MineGPT
+ChatGPT for Minecraft
